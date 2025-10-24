@@ -1,74 +1,84 @@
-export default function SuklaaChocolates() {
-  return (
-    <div className="min-h-screen bg-gradient-to-b from-[#3e2723] to-[#1b0000] text-white font-sans">
-      {/* Cabeçalho */}
-      <header className="text-center py-20 px-6">
-        <h1 className="text-5xl font-bold mb-4 tracking-wide">Suklaa Chocolates</h1>
-        <p className="text-lg max-w-2xl mx-auto text-gray-200">
-          Chocolates artesanais brasileiros feitos com paixão e precisão desde 2009. Saboreie a arte do cacau — direto de Santo André para o mundo.
-        </p>
-        <div className="mt-8 flex justify-center gap-4">
-          <a href="#sobre" className="bg-amber-500 text-black px-6 py-3 rounded-xl font-semibold hover:bg-amber-400 transition">Conheça a Suklaa</a>
-          <a href="#servicos" className="border border-amber-400 text-amber-400 px-6 py-3 rounded-xl font-semibold hover:bg-amber-400 hover:text-black transition">Nossos Serviços</a>
-        </div>
-      </header>
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suklaa Chocolates</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="min-h-screen bg-gradient-to-b from-[#3e2723] to-[#1b0000] text-white font-sans">
 
-      {/* Sobre Nós */}
-      <section id="sobre" className="bg-[#4e342e] p-10 md:p-20 rounded-2xl max-w-5xl mx-auto shadow-xl my-10">
-        <h2 className="text-3xl font-semibold mb-6">Sobre Nós</h2>
-        <p className="text-gray-100 leading-relaxed mb-4">
-          Fundada em <strong>10 de agosto de 2009</strong>, a <strong>Suklaa Chocolates</strong> (CNPJ <strong>11.385.506/0001-82</strong>) é uma empresa de pequeno porte localizada em <strong>Santo André, São Paulo</strong>. Somos especialistas na fabricação artesanal de chocolates finos e produtos derivados do cacau.
-        </p>
-        <p className="text-gray-100">
-          Combinamos tradição, criatividade e ingredientes de alta qualidade para criar experiências sensoriais únicas. Nosso propósito é transformar o simples ato de comer chocolate em um momento inesquecível.
-        </p>
-      </section>
+    <!-- Cabeçalho -->
+    <header class="text-center py-20 px-6">
+      <h1 class="text-5xl font-bold mb-4 tracking-wide">Suklaa Chocolates</h1>
+      <p class="text-lg max-w-2xl mx-auto text-gray-200">
+        Chocolates artesanais brasileiros feitos com paixão e precisão desde 2009. 
+        Saboreie a arte do cacau — direto de Santo André para o mundo.
+      </p>
+      <div class="mt-8 flex justify-center gap-4">
+        <a href="#sobre" class="bg-amber-500 text-black px-6 py-3 rounded-xl font-semibold hover:bg-amber-400 transition">Conheça a Suklaa</a>
+        <a href="#servicos" class="border border-amber-400 text-amber-400 px-6 py-3 rounded-xl font-semibold hover:bg-amber-400 hover:text-black transition">Nossos Serviços</a>
+      </div>
+    </header>
 
-      {/* Principais Serviços */}
-      <section id="servicos" className="p-10 md:p-20 max-w-6xl mx-auto">
-        <h2 className="text-3xl font-semibold mb-10 text-center">Principais Serviços</h2>
-        <div className="grid md:grid-cols-3 gap-8">
-          <div className="bg-[#5d4037] p-8 rounded-2xl shadow-lg hover:scale-105 transition">
-            <h3 className="text-2xl font-bold mb-4 text-amber-400">Chocolates Artesanais</h3>
-            <p className="text-gray-100">Produzimos chocolates premium, recheados, bombons e trufas com ingredientes selecionados e técnicas tradicionais.</p>
-          </div>
-          <div className="bg-[#5d4037] p-8 rounded-2xl shadow-lg hover:scale-105 transition">
-            <h3 className="text-2xl font-bold mb-4 text-amber-400">Presentes Corporativos</h3>
-            <p className="text-gray-100">Kits personalizados e embalagens elegantes para empresas que desejam impressionar clientes e colaboradores.</p>
-          </div>
-          <div className="bg-[#5d4037] p-8 rounded-2xl shadow-lg hover:scale-105 transition">
-            <h3 className="text-2xl font-bold mb-4 text-amber-400">Eventos & Festas</h3>
-            <p className="text-gray-100">Chocolates sob medida para casamentos, festas e eventos, com identidade visual e sabor exclusivos.</p>
-          </div>
-        </div>
-        <div className="text-center mt-12">
-          <a href="#contato" className="bg-amber-500 text-black px-8 py-3 rounded-xl font-semibold hover:bg-amber-400 transition">Solicite um Orçamento</a>
-        </div>
-      </section>
+    <!-- Sobre Nós -->
+    <section id="sobre" class="bg-[#4e342e] p-10 md:p-20 rounded-2xl max-w-5xl mx-auto shadow-xl my-10">
+      <h2 class="text-3xl font-semibold mb-6">Sobre Nós</h2>
+      <p class="text-gray-100 leading-relaxed mb-4">
+        Fundada em <strong>10 de agosto de 2009</strong>, a <strong>Suklaa Chocolates</strong> (CNPJ <strong>11.385.506/0001-82</strong>)
+        é uma empresa de pequeno porte localizada em <strong>Santo André, São Paulo</strong>.
+        Somos especialistas na fabricação artesanal de chocolates finos e produtos derivados do cacau.
+      </p>
+      <p class="text-gray-100">
+        Combinamos tradição, criatividade e ingredientes de alta qualidade para criar experiências sensoriais únicas. 
+        Nosso propósito é transformar o simples ato de comer chocolate em um momento inesquecível.
+      </p>
+    </section>
 
-      {/* Contato */}
-      <section id="contato" className="p-10 md:p-20 max-w-5xl mx-auto">
-        <h2 className="text-3xl font-semibold mb-6 text-center">Contato & Localização</h2>
-        <ul className="space-y-2 text-gray-100 text-center">
-          <li><strong>Email:</strong> <a href="mailto:heloisa@suklaa.com.br" className="text-amber-400 hover:underline">heloisa@suklaa.com.br</a></li>
-          <li><strong>Telefones:</strong> (11) 4459-7009 | (11) 99960-6752 (WhatsApp) | (11) 4438-6566</li>
-          <li><strong>Endereço:</strong> Rua Maracás, 172 — Vila Pinheirinho, Santo André - SP — CEP 09190-270</li>
-        </ul>
-        <div className="mt-8 text-center">
-          <a href="https://goo.gl/maps/8rW8xR4EoVv" target="_blank" rel="noopener noreferrer" className="bg-amber-500 text-black px-6 py-3 rounded-xl font-semibold hover:bg-amber-400 transition">Ver no Google Maps</a>
+    <!-- Principais Serviços -->
+    <section id="servicos" class="p-10 md:p-20 max-w-6xl mx-auto">
+      <h2 class="text-3xl font-semibold mb-10 text-center">Principais Serviços</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-[#5d4037] p-8 rounded-2xl shadow-lg hover:scale-105 transition">
+          <h3 class="text-2xl font-bold mb-4 text-amber-400">Chocolates Artesanais</h3>
+          <p class="text-gray-100">Produzimos chocolates premium, recheados, bombons e trufas com ingredientes selecionados e técnicas tradicionais.</p>
         </div>
-      </section>
+        <div class="bg-[#5d4037] p-8 rounded-2xl shadow-lg hover:scale-105 transition">
+          <h3 class="text-2xl font-bold mb-4 text-amber-400">Presentes Corporativos</h3>
+          <p class="text-gray-100">Kits personalizados e embalagens elegantes para empresas que desejam impressionar clientes e colaboradores.</p>
+        </div>
+        <div class="bg-[#5d4037] p-8 rounded-2xl shadow-lg hover:scale-105 transition">
+          <h3 class="text-2xl font-bold mb-4 text-amber-400">Eventos & Festas</h3>
+          <p class="text-gray-100">Chocolates sob medida para casamentos, festas e eventos, com identidade visual e sabor exclusivos.</p>
+        </div>
+      </div>
+      <div class="text-center mt-12">
+        <a href="#contato" class="bg-amber-500 text-black px-8 py-3 rounded-xl font-semibold hover:bg-amber-400 transition">Solicite um Orçamento</a>
+      </div>
+    </section>
 
-      {/* Rodapé */}
-      <footer className="text-center py-10 bg-[#3e2723] text-gray-400 text-sm border-t border-[#5d4037]">
-        <div className="mb-4">
-          <a href="#sobre" className="mx-3 hover:text-amber-400">Sobre</a>
-          <a href="#servicos" className="mx-3 hover:text-amber-400">Serviços</a>
-          <a href="#contato" className="mx-3 hover:text-amber-400">Contato</a>
-        </div>
-        <p>© 2025 Suklaa Chocolates — Todos os direitos reservados.</p>
-        <p>CNPJ: 11.385.506/0001-82 | Santo André - SP</p>
-      </footer>
-    </div>
-  );
-}
+    <!-- Contato -->
+    <section id="contato" class="p-10 md:p-20 max-w-5xl mx-auto">
+      <h2 class="text-3xl font-semibold mb-6 text-center">Contato & Localização</h2>
+      <ul class="space-y-2 text-gray-100 text-center">
+        <li><strong>Email:</strong> <a href="mailto:heloisa@suklaa.com.br" class="text-amber-400 hover:underline">heloisa@suklaa.com.br</a></li>
+        <li><strong>Telefones:</strong> (11) 4459-7009 | (11) 99960-6752 (WhatsApp) | (11) 4438-6566</li>
+        <li><strong>Endereço:</strong> Rua Maracás, 172 — Vila Pinheirinho, Santo André - SP — CEP 09190-270</li>
+      </ul>
+      <div class="mt-8 text-center">
+        <a href="https://goo.gl/maps/8rW8xR4EoVv" target="_blank" rel="noopener noreferrer" class="bg-amber-500 text-black px-6 py-3 rounded-xl font-semibold hover:bg-amber-400 transition">Ver no Google Maps</a>
+      </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="text-center py-10 bg-[#3e2723] text-gray-400 text-sm border-t border-[#5d4037]">
+      <div class="mb-4">
+        <a href="#sobre" class="mx-3 hover:text-amber-400">Sobre</a>
+        <a href="#servicos" class="mx-3 hover:text-amber-400">Serviços</a>
+        <a href="#contato" class="mx-3 hover:text-amber-400">Contato</a>
+      </div>
+      <p>© 2025 Suklaa Chocolates — Todos os direitos reservados.</p>
+      <p>CNPJ: 11.385.506/0001-82 | Santo André - SP</p>
+    </footer>
+  </body>
+</html>
